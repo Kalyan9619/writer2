@@ -8,7 +8,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useHistory, useParams } from "react-router-dom";
 import { NEW_PWD_URL } from "../config/constants";
-import Copyright from "../components/Copyight";
+
 import axios from "axios";
 // Material-UI Components
 import { makeStyles } from "@material-ui/core/styles";
@@ -166,7 +166,7 @@ const NewPass = () => {
 						</form>
 					</div>
 					<Box mt={8}>
-						<Copyright />
+					
 					</Box>
 				</Container>
 			</Grid>

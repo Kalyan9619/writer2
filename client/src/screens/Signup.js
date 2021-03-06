@@ -9,7 +9,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link, useHistory } from "react-router-dom";
 import axios from "axios";
 import { SIGNUP_URL } from "../config/constants";
-import Copyright from "../components/Copyight";
+
 // Material-UI Components
 import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
@@ -195,7 +195,7 @@ const Signup = () => {
 				</form>
 			</div>
 			<Box mt={5}>
-				<Copyright />
+				
 			</Box>
 		</Container>
 	);

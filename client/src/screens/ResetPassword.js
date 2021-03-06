@@ -6,10 +6,10 @@
  */
 
 import React, { useState, useRef, useEffect } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import axios from "axios";
 import { RESET_PWD_URL } from "../config/constants";
-import Copyright from "../components/Copyight";
+
 // Material-UI Components
 import Button from "@material-ui/core/Button";
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -77,7 +77,7 @@ const Reset = () => {
 	const PostData = () => {
 		// the Regex email validation was token from : https://emailregex.com/
 		if (
-			/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+			/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
 				email
 			)
 		) {
@@ -166,7 +166,7 @@ const Reset = () => {
 						</form>
 					</div>
 					<Box mt={8}>
-						<Copyright />
+					
 					</Box>
 				</Container>
 			</Grid>

@@ -23,7 +23,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import InputBase from "@material-ui/core/InputBase";
-import Badge from "@material-ui/core/Badge";
+
 import MenuItem from "@material-ui/core/MenuItem";
 import Menu from "@material-ui/core/Menu";
 import BottomNavigation from "@material-ui/core/BottomNavigation";
@@ -36,8 +36,7 @@ import SearchOutlinedIcon from "@material-ui/icons/SearchOutlined";
 import ExploreOutlinedIcon from "@material-ui/icons/ExploreOutlined";
 import AddAPhotoOutlinedIcon from "@material-ui/icons/AddAPhotoOutlined";
 import HomeOutlinedIcon from "@material-ui/icons/HomeOutlined";
-import AllInboxOutlinedIcon from "@material-ui/icons/AllInboxOutlined";
-import NotificationsActiveOutlinedIcon from "@material-ui/icons/NotificationsActiveOutlined";
+
 import AccountCircleOutlinedIcon from "@material-ui/icons/AccountCircleOutlined";
 import ExitToAppOutlinedIcon from "@material-ui/icons/ExitToAppOutlined";
 
@@ -358,38 +357,7 @@ const Navbar = (props) => {
 										/>
 									}
 								/>
-								<BottomNavigationAction
-									label="Messages"
-									value="messages"
-									component={Link}
-									to="/messages"
-									style={{ "color": "rgba(0, 0, 0, 0.54)" }}
-									icon={
-										<Badge
-											badgeContent={4}
-											color="secondary"
-											style={{
-												"color": "rgba(0, 0, 0, 0.54)",
-											}}
-										>
-											<AllInboxOutlinedIcon />
-										</Badge>
-									}
-								/>
-								<BottomNavigationAction
-									label="Notifications"
-									style={{ "color": "rgba(0, 0, 0, 0.54)" }}
-									value="notification"
-									icon={
-										<Badge badgeContent={6} color="secondary">
-											<NotificationsActiveOutlinedIcon
-												style={{
-													"color": "rgba(0, 0, 0, 0.54)",
-												}}
-											/>
-										</Badge>
-									}
-								/>
+								
 								<BottomNavigationAction
 									label="Profile"
 									value="profile"

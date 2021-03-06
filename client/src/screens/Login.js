@@ -9,7 +9,7 @@ import React, { useState, useContext } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { UserContext } from "../App";
 import { LOGIN_URL } from "../config/constants";
-import Copyright from "../components/Copyight";
+
 import axios from "axios";
 // Material-UI Components
 import Button from "@material-ui/core/Button";
@@ -75,7 +75,7 @@ const Login = () => {
 	const PostData = () => {
 		// the Regex email validation was token from : https://emailregex.com/
 		if (
-			/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+			/^(([^<>()\\[\]\\.,;:\s@"]+(\.[^<>()\\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
 				email
 			)
 		) {
@@ -185,7 +185,7 @@ const Login = () => {
 						</form>
 					</div>
 					<Box mt={8}>
-						<Copyright />
+						
 					</Box>
 				</Container>
 			</Grid>
