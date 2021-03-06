@@ -10,7 +10,7 @@ const mongoose = require("mongoose");
 var cors = require("cors");
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT ||5000;
 const URL = "mongodb+srv://chatweb:chatweb@cluster0.csivb.mongodb.net/social?retryWrites=true&w=majority";
 
 mongoose.connect(URL, {
